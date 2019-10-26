@@ -86,6 +86,7 @@ client.on('message', function (message){
     if(message.content === "On"){
         message.channel.send("🎃 **Le serveur est ON** 🎃")
         message.channel.send("```🎃 Désoler de cet maintenance 🎃```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur ouvert ;)")
     }
 });
@@ -94,6 +95,7 @@ client.on('message', function (message){
     if(message.content === "Off"){
         message.channel.send("🎃**Le serveur est OFF** 🎃")
         message.channel.send("```🎃 Cacher, Cacher ! 🎃```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur éteint")
     }
 });
@@ -102,6 +104,7 @@ client.on('message', function (message){
     if(message.content === "Maintenance"){
         message.channel.send("🎃 **Une maintenance est en cours !** 🎃")
         message.channel.send("``` 🎃 Vous ne pouvez pas acceder au discord ! Raison : [Maintenance] 🎃 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Maintenance en cour")
     }
 });
@@ -110,6 +113,7 @@ client.on('message', function (message){
     if(message.content === "Staff"){
         message.channel.send("🎃 Staff | **Besoin d'un coup de pouce** ;) 🎃 ")
         message.channel.send("``` 🎃 J'ai un problème venez m'aider dès que possible ! 🎃 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Besoin d'une personne du staff")
     }
 });
@@ -118,6 +122,7 @@ client.on('message', function (message){
     if(message.content === "Reunion"){
         message.channel.send("🎃 Staff | **Réunion dans quelque instants !** 🎃")
         message.channel.send("``` 🎃 Merci d'aller dans le channel : Réunion 🎃 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Réunion en cour")
     }
 });
@@ -152,6 +157,7 @@ client.on('message', function (message){
     if(message.content === "On"){
         message.channel.send("🎄 **Le serveur est ON** 🎄")
         message.channel.send("```🎄 Désolé de cet maintenance 🎄```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur ouvert ;)")
     }
 });
@@ -160,6 +166,7 @@ client.on('message', function (message){
     if(message.content === "Off"){
         message.channel.send("🎄**Le serveur est OFF** 🎄")
         message.channel.send("```🎄 Cacher, Cacher ! 🎄```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur éteint")
     }
 });
@@ -168,6 +175,7 @@ client.on('message', function (message){
     if(message.content === "Maintenance"){
         message.channel.send("🎄 **Une maintenance est en cours !** 🎄")
         message.channel.send("``` 🎄 Vous ne pouvez pas acceder à ce discord ! Raison : [Maintenance] 🎄 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Maintenance en cour")
     }
 });
@@ -176,6 +184,7 @@ client.on('message', function (message){
     if(message.content === "Staff"){
         message.channel.send("🎄 Staff | **Besoin d'un coup de pouce** ;) 🎄 ")
         message.channel.send("``` 🎄 J'ai un problème venez m'aider dès que possible ! 🎄 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Besoin d'une personne du staff")
     }
 });
@@ -184,6 +193,7 @@ client.on('message', function (message){
     if(message.content === "Reunion"){
         message.channel.send("🎄 Staff | **Réunion dans quelque instants !** 🎄")
         message.channel.send("``` 🎄 Merci d'aller dans le channel : Réunion 🎄 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Réunion en cour")
     }
 });*/
@@ -218,6 +228,7 @@ client.on('message', function (message){
     if(message.content === "On"){
         message.channel.send("👤 **Le serveur est ON** 👤")
         message.channel.send("```👤 Désolé de cet maintenance 👤```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur ouvert ;)")
     }
 });
@@ -226,6 +237,7 @@ client.on('message', function (message){
     if(message.content === "Off"){
         message.channel.send("👤**Le serveur est OFF** 👤")
         message.channel.send("```👤 Cacher, Cacher 👤```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur éteint")
     }
 });
@@ -234,6 +246,7 @@ client.on('message', function (message){
     if(message.content === "Maintenance"){
         message.channel.send("👤 **Une maintenance est en cours !** 👤")
         message.channel.send("```👤 Vous ne pouvez pas acceder à ce discord ! Raison : [Maintenance] 👤```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Maintenance en cour")
     }
 });
@@ -242,6 +255,7 @@ client.on('message', function (message){
     if(message.content === "Staff"){
         message.channel.send("👤 Staff | **Besoin d'un coup de pouce** ;) 👤")
         message.channel.send("```👤 J'ai un problème venez m'aider dès que possible ! 👤```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Besoin d'une personne du staff")
     }
 });
@@ -250,6 +264,7 @@ client.on('message', function (message){
     if(message.content === "Reunion"){
         message.channel.send("👤 Staff | **Réunion dans quelque instants !** 👤")
         message.channel.send("```👤 Merci d'aller dans le channel : Réunion 👤```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Réunion en cour")
     }
 });*/
@@ -284,6 +299,7 @@ client.on('message', function (message){
     if(message.content === "On"){
         message.channel.send("🎉 **Le serveur est ON** 🎉")
         message.channel.send("```🎉 Désolé de cet maintenance 🎉```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur ouvert ;)")
     }
 });
@@ -292,6 +308,7 @@ client.on('message', function (message){
     if(message.content === "Off"){
         message.channel.send("🎉**Le serveur est OFF** 🎉")
         message.channel.send("```🎉 Cacher, Cacher 🎉```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur éteint")
     }
 });
@@ -300,6 +317,7 @@ client.on('message', function (message){
     if(message.content === "Maintenance"){
         message.channel.send("🎉 **Une maintenance est en cours !** 🎉")
         message.channel.send("``` 🎉 Vous ne pouvez pas acceder à ce discord ! Raison : [Maintenance] 🎉 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Maintenance en cour")
     }
 });
@@ -308,6 +326,7 @@ client.on('message', function (message){
     if(message.content === "Staff"){
         message.channel.send("🎉 Staff | **Besoin d'un coup de pouce** ;) 🎉 ")
         message.channel.send("``` 🎉 J'ai un problème venez m'aider dès que possible ! 🎉 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Besoin d'une personne du staff")
     }
 });
@@ -316,6 +335,7 @@ client.on('message', function (message){
     if(message.content === "Reunion"){
         message.channel.send("🎉 Staff | **Réunion dans quelque instants !** 🎉")
         message.channel.send("``` 🎉 Merci d'aller dans le channel : Réunion 🎉 ```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Réunion en cour")
     }
 });*/
@@ -350,6 +370,7 @@ client.on('message', function (message){
     if(message.content === "On"){
         message.channel.send("🥚 **Le serveur est ON** 🥚")
         message.channel.send("```🥚 Désolé de cet maintenance 🥚```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur ouvert ;)")
     }
 });
@@ -358,6 +379,7 @@ client.on('message', function (message){
     if(message.content === "Off"){
         message.channel.send("🥚**Le serveur est OFF** 🥚")
         message.channel.send("```🥚 Cacher, Cacher 🥚```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Serveur éteint")
     }
 });
@@ -366,6 +388,7 @@ client.on('message', function (message){
     if(message.content === "Maintenance"){
         message.channel.send("🥚 **Une maintenance est en cours !** 🥚")
         message.channel.send("```🥚 Vous ne pouvez pas acceder à ce discord ! Raison : [Maintenance] 🥚```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Maintenance en cour")
     }
 });
@@ -374,6 +397,7 @@ client.on('message', function (message){
     if(message.content === "Staff"){
         message.channel.send("🥚 Staff | **Besoin d'un coup de pouce** ;) 🥚")
         message.channel.send("```🥚 J'ai un problème venez m'aider dès que possible ! 🥚```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Besoin d'une personne du staff")
     }
 });
@@ -382,6 +406,7 @@ client.on('message', function (message){
     if(message.content === "Reunion"){
         message.channel.send("🥚 Staff | **Réunion dans quelque instants !** 🥚")
         message.channel.send("```🥚 Merci d'aller dans le channel : Réunion 🥚```")
+        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
         console.log("Réunion en cour")
     }
 });*/
