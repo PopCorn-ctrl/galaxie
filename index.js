@@ -25,6 +25,18 @@ client.on('guildMemberAdd', member =>{
 });
 
 
+/*anniv*/
+client.on('message', function (message) {
+    if (!message.guild) return
+    let args = message.content.trim().split(/ +/g)
+ 
+    if (args[0].toLowerCase() === prefix + 'anniv') {
+       if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
+       message.channel.send(':tada: **Joyeux anniversaire 🎃🍁DrAkuLå 🔥🍄**' + '**n\ Tout le staff te souhaite un très beaux anni :white_check_mark:')        
+
+    }
+})
+
 /*Kick*/
 client.on('message', function (message) {
     if (!message.guild) return
