@@ -32,7 +32,7 @@ client.on('message', function (message) {
  
     if (args[0].toLowerCase() === prefix + 'anniv') {
        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
-       message.channel.send(':tada: **Joyeux anniversaire 🎃🍁DrAkuLå 🔥🍄  -**' + '  __Tout__ **le staff te souhaite un très beaux anniversaire !** :white_check_mark:')        
+       message.channel.send(":tada: **Joyeux anniversaire 🎃🍁DrAkuLå 🔥🍄  -**" + "  __Tout__ **le staff te souhaite un très beaux anniversaire !** :white_check_mark:")        
 
     }
 })
@@ -44,7 +44,7 @@ client.on('message', function (message) {
  
     if (args[0].toLowerCase() === prefix + 'halloween') {
        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
-       message.channel.send("```Fix Joyeux Halloween 🎃🎉!' + ' ```Css Tout le staff de souhaite un très beux Halloween !```")        
+       message.channel.send("```Fix Joyeux Halloween 🎃🎉!" + " ```Css Tout le staff de souhaite un très beux Halloween !```")        
 
     }
 })
