@@ -44,7 +44,7 @@ client.on('message', function (message) {
  
     if (args[0].toLowerCase() === prefix + 'halloween') {
        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
-       message.channel.send("```Markdown Joyeux Halloween 🎃🎉! \n Tout le staff de souhaite un très beux Halloween !```")        
+       message.channel.send("**Joyeux** __***Halloween***__ 🎃🎉! \n __Tout__ **le staff de souhaite un très beux Halloween !** n\ __**Le Staff**__")        
 
     }
 })
