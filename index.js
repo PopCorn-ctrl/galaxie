@@ -42,7 +42,7 @@ client.on('message', function (message) {
     if (!message.guild) return
     let args = message.content.trim().split(/ +/g)
  
-    if (args[0].toLowerCase() === prefix + 'anniv') {
+    if (args[0].toLowerCase() === prefix + 'h') {
        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
        message.channel.send(":tada: 🎃 **Joyeux Halloween !** __**Tout**__ **le staff te souhaite un très beau Halloween !** :white_check_mark: 🎃 :tada:")        
 
