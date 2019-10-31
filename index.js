@@ -37,6 +37,18 @@ client.on('message', function (message) {
     }
 })
 
+/*anniv*/
+client.on('message', function (message) {
+    if (!message.guild) return
+    let args = message.content.trim().split(/ +/g)
+ 
+    if (args[0].toLowerCase() === prefix + 'halloween') {
+       if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
+       message.channel.send(':tada: **Joyeux __Holloween__ ||@everyone||' + '  __Tout__ **le staff te souhaite un très beaux halloween !** :white_check_mark: 🎃')        
+
+    }
+})
+
 /*Kick*/
 client.on('message', function (message) {
     if (!message.guild) return
