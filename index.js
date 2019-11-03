@@ -49,6 +49,18 @@ client.on('message', function (message) {
     }
 })
 
+/*Rentré*/
+client.on('message', function (message) {
+    if (!message.guild) return
+    let args = message.content.trim().split(/ +/g)
+ 
+    if (args[0].toLowerCase() === prefix + 'rentrer') {
+       if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
+       message.channel.send(":sob: **Bonne rentrer à tous(te)**" + "  __smile__ **Courrage les prochaine vacances sont dans un mois ! ;)**")        
+
+    }
+})
+
 /*Kick*/
 client.on('message', function (message) {
     if (!message.guild) return
