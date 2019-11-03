@@ -56,7 +56,7 @@ client.on('message', function (message) {
  
     if (args[0].toLowerCase() === prefix + 'rentrer') {
        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Vous n'avez pas la permission d'utiliser cette commande ;(")
-       message.channel.send(":sob: **Bonne rentrer à tous(te)**" + "  __smile__ **Courrage les prochaine vacances sont dans un mois ! ;)**")        
+       message.channel.send(":slight_smile: **Bonne rentrer à tous(te)**" + "  :smile: **Courrage les prochaine vacances sont dans un mois ! ;)**")        
 
     }
 })
